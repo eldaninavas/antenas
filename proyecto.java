@@ -57,7 +57,7 @@ public class  proyecto{
 			int x = Integer.parseInt(r.readLine());
 			System.out.println("Ingrese la columna de la antena: " +i );
 			int y =	Integer.parseInt(r.readLine());
-			if (x>fila || x<0 || y>col || y<0){System.out.println("No puedes colocar las antenas fuera de la ciudad "); } 
+			if (x>fila-1 || x<0 || y>col-1 || y<0){System.out.println("No puedes colocar las antenas fuera de la ciudad "); } 
 			ciudad[x][y] = 1;
 			mostrar_matriz(ciudad);} 
 		ciudad = aplicar_cobertura(ciudad,cobertura);
